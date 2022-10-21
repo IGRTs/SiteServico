@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="modelo.master.cs" Inherits="modelo" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="estilo.css" rel="stylesheet" />
+    <title></title>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="menu">
+        <asp:HyperLink ID="Link1" runat="server" 
+            NavigateUrl="pesqServicos.aspx">
+            Serviços Oferecidos
+        </asp:HyperLink>
+        <br />
+        <asp:HyperLink ID="HyperLink1" 
+            NavigateUrl="novoservico.aspx" 
+            runat="server">Novo Serviço
+        </asp:HyperLink>
+        <br />
+        <asp:HyperLink ID="HyperLink2" 
+            NavigateUrl="login.aspx" 
+            runat="server">Login
+        </asp:HyperLink>
+        <br />
+        <asp:HyperLink ID="HyperLink3" 
+            NavigateUrl="solicitaServico.aspx" 
+            runat="server">Solicitar Serviço
+        </asp:HyperLink>
+        <br />
+        <asp:HyperLink ID="HyperLink4" 
+            NavigateUrl="solicitacoes.aspx" 
+            runat="server">Consultar Solicitações
+        </asp:HyperLink>
+
+
+
+    </div>
+    <div class="content">
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    
+    </div>
+    </form>
+</body>
+</html>
